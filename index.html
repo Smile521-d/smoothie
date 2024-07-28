@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smoothie Order Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Order Your Smoothie!</h1>
+        <form id="smoothieForm">
+            <div class="form-group">
+                <label for="flavor">Pick a flavor:</label>
+                <select id="flavor" name="flavor" required>
+                    <option value="" disabled selected>Choose flavor</option>
+                    <option value="Strawberry" data-price="5.00">Strawberry - $5.00</option>
+                    <option value="Mango" data-price="5.50">Mango - $5.50</option>
+                    <option value="Banana" data-price="4.75">Banana - $4.75</option>
+                    <option value="Blueberry" data-price="6.00">Blueberry - $6.00</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="size">Size:</label>
+                <select id="size" name="size" required>
+                    <option value="" disabled selected>Choose size</option>
+                    <option value="Small" data-price="0">Small</option>
+                    <option value="Medium" data-price="1.00">Medium - $1.00</option>
+                    <option value="Large" data-price="2.00">Large - $2.00</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>Toppings (50 cents each):</label>
+                <input type="checkbox" id="topping1" name="topping" value="Granola">
+                <label for="topping1">Granola</label>
+                <input type="checkbox" id="topping2" name="topping" value="Chia Seeds">
+                <label for="topping2">Chia Seeds</label>
+                <input type="checkbox" id="topping3" name="topping" value="Coconut Flakes">
+                <label for="topping3">Coconut Flakes</label>
+            </div>
+            <button type="button" class="btn" onclick="submitOrder()">Place Order!</button>
+        </form>
+        <div id="order-summary"></div>
+        <div id="bill"></div>
+        <div id="smoothie-image"></div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>

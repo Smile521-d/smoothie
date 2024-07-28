@@ -1,0 +1,103 @@
+/* Basic reset for padding and margin */
+body {
+    font-family: 'Comic Sans MS', cursive, sans-serif; 
+    background-color: #fefbd8; /* Soft yellow background */
+    color: #333; 
+    margin: 0;
+    padding: 0;
+}
+
+/* Center the main container with a max width */
+.container {
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 20px;
+    border-radius: 12px;
+    background-color: #ffeb3b; /* Bright yellow background */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
+    transition: transform 0.3s ease; 
+}
+
+.container:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+}
+
+/* Styling the heading */
+h1 {
+    text-align: center;
+    color: #e91e63; 
+    font-family: 'Pacifico', cursive; 
+    margin-bottom: 20px; 
+}
+
+/* Styling form groups */
+.form-group {
+    margin-bottom: 20px; /* Space between form groups */
+}
+
+.form-group label {
+    display: block; /* Labels take full width */
+    margin-bottom: 10px; /* Space below labels */
+}
+
+/* Styling inputs and selects */
+.form-group select,
+.form-group input {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #e91e63; /* Pink border */
+    border-radius: 8px; 
+    background-color: #fff; 
+    transition: all 0.3s;
+}
+
+.form-group select:focus,
+.form-group input:focus {
+    background-color: #ffe4e1; 
+    border-color: #e91e63; 
+}
+
+/* Styling the button */
+.btn {
+    background-color: #e91e63; 
+    color: #fff; 
+    padding: 15px;
+    border: none;
+    border-radius: 8px; 
+    cursor: pointer;
+    width: 100%; 
+    font-size: 1.2em; 
+    font-weight: bold; 
+    transition: background-color 0.3s ease; /* Smooth background color transition */
+}
+
+.btn:hover {
+    background-color: #c2185b; /* Darker pink on hover */
+}
+
+/* Styling the image container */
+#smoothie-image img {
+    max-width: 50%; /* Adjust max width to make the image smaller */
+    height: auto; 
+    display: block; /* Center image */
+    margin: 10px auto; 
+    border: 5px solid #e91e63; 
+    border-radius: 12px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+/* Styling order summary and bill */
+#order-summary,
+#bill {
+    font-size: 1.5em; 
+    color: #e91e63; 
+    text-align: center; /* Centered text */
+    margin: 20px 0; /* Space above and below */
+}
+
+/* Additional styling for a more playful look */
+.container {
+    background: linear-gradient(135deg, #ffeb3b 0%, #ffe4e1 100%); /* Gradient background */
+    border: 2px solid #ffa07a; 
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1); 
+}
